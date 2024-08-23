@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --azulOscuro: #001524;
+  --blancoFondo: #eff7f6;
+  --naranjaLlamativo: #d15000;
+  --naranja: #ff6200;
+}
+body {
+  background-color: var(--blancoFondo);
+  display: grid;
+  place-items: center;
+  max-width: 100vw;
+}
+header {
+  background-color: #9d3c00;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: 10vh;
+  color: white;
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: cadetblue;
+}
+.container .proyectos {
+  width: 90%;
+}
+.container .proyectos .proyecto {
+  background-color: var(--azulOscuro);
+  width: 22%;
+  height: 400px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+.container .proyectos .proyecto .imagen {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+}
+.container .proyectos .proyecto .texto {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+.container .proyectos .proyecto .texto h1 {
+  font-size: 1.8rem;
+  font-family: sans-serif;
+}
+.container .proyectos .proyecto .texto p {
+  font-size: 1.1rem;
+  font-family: sans-serif;
+}
+.container .proyectos .proyecto a {
+  all: unset;
+  width: 70%;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: sans-serif;
+  border-radius: 10px;
+  background-color: var(--naranjaLlamativo);
+  transition: all 0.2s;
+}
+.container .proyectos .proyecto a:hover {
+  background-color: var(--naranja);
+}
